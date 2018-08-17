@@ -1,0 +1,8 @@
+# Dependencies
+**/node_modules
+
+# Code editor configuration
+**/.vscode
+
+# not delivered files
+package-lock.json
