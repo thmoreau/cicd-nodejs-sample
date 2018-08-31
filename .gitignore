@@ -4,5 +4,6 @@
 # Code editor configuration
 **/.vscode
 
-# not delivered files
-package-lock.json
+# generated files
+.nyc_output
+src/reports
