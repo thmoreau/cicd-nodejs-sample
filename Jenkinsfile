@@ -2,8 +2,7 @@ pipeline {
   agent {
     docker {
       image 'node'
-      label 'NodeJS'
-      args ''
+      args '-p 3000:3000'
     }
   }
 
