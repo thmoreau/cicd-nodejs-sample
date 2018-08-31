@@ -4,6 +4,7 @@
   "description": "A sample project for CI/CD chain testing purpose",
   "main": "server.js",
   "scripts": {
+    "start": "node server.js",
     "mocha": "mocha --recursive **/*.test.js --exclude **/node_modules/** --reporter list",
     "test": "nyc npm run mocha",
     "mocha:ci": "mocha --recursive **/*.test.js --exclude **/node_modules/** --reporter mocha-junit-reporter --reporter-options mochaFile=./reports/test/unit/test-results.xml",

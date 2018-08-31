@@ -1,5 +1,11 @@
 pipeline {
-  agent any
+  agent {
+    docker {
+      image 'node'
+      label 'NodeJS'
+      args ''
+    }
+  }
 
   stages {
     stage('Install') {
