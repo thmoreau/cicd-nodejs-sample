@@ -27,7 +27,7 @@ npm run eslint
     stage('Test') {
       steps {
         sh '''cd src
-npm test
+npm run test:ci
 '''
         junit 'src/reports/test/unit/*.xml'
       }
