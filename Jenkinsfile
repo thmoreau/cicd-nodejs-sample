@@ -1,10 +1,6 @@
 pipeline {
-  agent {
-    docker {
-      image 'node'
-      args '-p 3000:3000'
-    }
-  }
+  // Docker agent seems to be broken on windows because of absolute paths and Windows/MinGW32 path conversion
+  agent any
 
   stages {
     stage('Install') {
