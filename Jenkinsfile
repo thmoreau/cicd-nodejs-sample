@@ -19,7 +19,7 @@ npm install
     stage('Check source code') {
       steps {
         sh '''cd src
-npm run eslint
+npm run eslint:ci
 '''
         checkstyle(pattern: 'src/reports/eslint/**/*.xml')
       }

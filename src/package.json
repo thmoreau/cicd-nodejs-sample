@@ -8,7 +8,8 @@
     "test": "nyc npm run mocha",
     "mocha:ci": "mocha --recursive **/*.test.js --exclude **/node_modules/** --reporter mocha-junit-reporter --reporter-options mochaFile=./reports/test/unit/test-results.xml",
     "test:ci": "nyc npm run mocha:ci",
-    "eslint": "eslint **/*.js -o reports/eslint/checkstyle-results.xml -f checkstyle || exit 0"
+    "eslint": "eslint **/*.js",
+    "eslint:ci": "eslint **/*.js -o reports/eslint/checkstyle-results.xml -f checkstyle || exit 0"
   },
   "nyc": {
     "include": [

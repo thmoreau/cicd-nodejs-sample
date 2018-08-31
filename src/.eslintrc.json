@@ -1,13 +1,13 @@
 {
 	"extends": "eslint:recommended",
 	"rules": {
-		"no-console": "off",
+		"no-console": "warn",
 		"no-empty": "warn",
 		"no-extra-boolean-cast": "warn",
 		"no-mixed-spaces-and-tabs": "warn",
 		"no-useless-escape": "warn",
 		"no-unused-vars": "warn",
-		"semi": "off"
+		"semi": "warn"
 	},
 	"env": {
 		"amd": true,
