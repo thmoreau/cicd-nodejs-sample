@@ -30,11 +30,13 @@ pipeline {
       }
     }
     stage('Cleanup'){
-      echo 'prune and cleanup'
-      sh 'npm prune'
-      // sh 'git clean -fdx'
-      sh 'rm node_modules -rf'
-      // send a mail for success
+      steps {
+        echo 'prune and cleanup'
+        sh 'npm prune'
+        // sh 'git clean -fdx'
+        sh 'rm node_modules -rf'
+        // send a mail for success
+      }
     }
   }
 }
