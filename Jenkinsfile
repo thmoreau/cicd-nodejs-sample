@@ -2,8 +2,10 @@ pipeline {
   agent any
 
   stages {
-    state('Checkout') {
-      checkout scm
+    stage('Checkout') {
+      steps {
+        checkout scm
+      }
     }
     stage('Install') {
       steps {
