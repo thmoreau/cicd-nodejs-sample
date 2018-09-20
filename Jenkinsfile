@@ -1,7 +1,14 @@
 pipeline {
   // Docker agent seems to be broken on windows because of absolute paths and Windows/MinGW32 path conversion
-  agent any
+  agent {
+    docker {
+      image 'node:8.12.0-alpine'
+    }
+  }
 
+  environment {
+    CI = 'true'
+  }
   stages {
     stage('Install') {
       steps {
